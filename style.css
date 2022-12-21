@@ -1,0 +1,141 @@
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.head-txt {
+    text-align: center;
+    background-color: rgb(19, 2, 116);
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(19, 2, 116);
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* hero */
+.hero {
+    background-image: url("./img/hero.webp");
+    background-color: #cccccc;
+    height: 850px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    color: rgb(19, 2, 116);
+    position: absolute;
+    top: 222px;
+    left: 155px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.hero-text h6 {
+    color: rgba(28, 10, 133, 0.829);
+}
+
+.hero-text button {
+    padding: 11px 43px;
+    border: 1px solid rgb(19, 2, 116);
+    color: rgb(19, 2, 116);
+}
+
+/* sellers */
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+footer div ul li {
+    list-style: none;
+}
+
+footer {
+    background-color: rgb(19, 2, 116);
+    color: white;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social {
+    height: 45px;
+    filter: invert(100);
+    margin: 0px 5px;
+}
+.list{
+    margin: 5px;
+    font-size: 20px;
+}
+#email{
+        background: transparent;
+        color: #FFF;
+        border: none;
+}
+::placeholder { 
+    color: white;
+    opacity: 1; 
+    font-size: 20px;
+  }
+
+  #myBtn{
+    margin: 15px 9px;
+  }
+  .fsize{
+    font-size: 20px;
+  }
+
+
+  /* media quries */
+  @media only screen and (max-width: 1150px){
+    nav{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .res-margin{
+        margin: 30px 10px;
+    }
+
+}
+  @media only screen and (max-width: 608px){
+    .hero-text{
+        left: 56px;
+    }
+    .res-logo{
+        height: 50px !important;
+    }
+}
+  @media only screen and (max-width: 406px){
+    .hero-text{
+        top: 125px;
+        left: 30px;
+    }
+}
